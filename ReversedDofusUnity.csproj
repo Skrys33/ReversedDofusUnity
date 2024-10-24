@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC3A5E08-4F8F-4B94-8716-F86464D20071}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Ankama</RootNamespace>
+    <AssemblyName>ReversedDofusUnity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationEndedEventArgs.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationEndedEventHandler.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationLabelChangedEventArgs.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationLabelChangedEventHandler.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationLoopedEventArgs.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationLoopedEventHandler.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationStartedEventArgs.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationStartedEventHandler.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\Animator2DInitialisedEventArgs.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\Animator2DInitialisedEventHandler.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Events\DelayedEvent.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Management\Animator2DManagerCallbackSource.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Playables\Animator2DPlayableAsset.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Playables\Animator2DPlayableBehaviour.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Playables\Animator2DTrackAsset.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\AnimationEvaluationHelper.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\AnimationGeometryVertex.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\AnimationMaskType.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\Animator2DCustomisableRenderer.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\Animator2DRenderer.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\Animator2DRendererUtility.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\Animator2DStateCache.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\AnimTransform.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\ArrayPool.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\BlurFilter.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\BufferRequest.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\BufferState.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\ColorHelpers.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\ColorMatrixFilter.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\DropShadowFilter.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\EvaluatedAnimationFrame.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\FlashFilters.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\FlashFiltersHelper.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\FlashMaskState.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\GenericSlotNamesCache.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\GlowFilter.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\IAnimator2DRenderer.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\IApplyMaterialSortOrder.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\MaterialConfigurationService.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\MaterialDescriptor.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\PrepassDescriptor.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\PrepassTextureInvalidator.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\PrepassTextureType.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\RenderState.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\ShaderConstants.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Rendering\SpriteRendererWithFilters.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Sources.Rendering.CustomPasses\AddOutlinesPassSettings.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Sources.Rendering.CustomPasses\OutlineInTexturePassSettings.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Sources.Rendering.CustomPasses\OutlinePassesFeature.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Sources.Rendering.CustomPasses\OutlinePrepassFeature.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations.Sources.Rendering.CustomPasses\OutlinePrepassSettings.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\AnimatedObjectDefinition.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\Animation.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\AnimationLabel.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\Animator2D.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\BackgroundObject.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\CustomisationSlot.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\DisplayListEntry.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\GraphicAsset.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\MaskableNode.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\NamedTransform.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\NamedTransformPositional.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\SkinAsset.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\SkinAssetPart.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\SkinAssetPartPair.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\SkinChunk.cs" />
+    <Compile Include="Animator2D\dummies\Ankama.Animations\SkinTransformData.cs" />
+    <Compile Include="Animator2D\dummies\FlashFilterRenderFeature.cs" />
+    <Compile Include="Animator2D\dummies\gut.cs" />
+    <Compile Include="Animator2D\dummies\guy.cs" />
+    <Compile Include="Animator2D\dummies\gva.cs" />
+    <Compile Include="Animator2D\dummies\gvb.cs" />
+    <Compile Include="Animator2D\dummies\gvc.cs" />
+    <Compile Include="Animator2D\dummies\gvd.cs" />
+    <Compile Include="Animator2D\dummies\gve.cs" />
+    <Compile Include="Animator2D\dummies\gvf.cs" />
+    <Compile Include="Animator2D\dummies\gvg.cs" />
+    <Compile Include="Animator2D\dummies\gvh.cs" />
+    <Compile Include="Animator2D\dummies\gvj.cs" />
+    <Compile Include="Animator2D\dummies\gvk.cs" />
+    <Compile Include="Animator2D\dummies\gvl.cs" />
+    <Compile Include="Animator2D\dummies\gvm.cs" />
+    <Compile Include="Animator2D\Rendering\BufferRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Animator2D\Events\" />
+    <Folder Include="Animator2D\Management\" />
+    <Folder Include="Animator2D\Playables\" />
+    <Folder Include="Animator2D\Sources.Rendering.CustomPasses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
