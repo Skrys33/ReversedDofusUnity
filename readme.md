@@ -1,10 +1,10 @@
 # Reversed Dofus Unity
 
-## Objectifs
+## Goals
 - Reverse Ankama.Animator2D
 
 ## Progression
-10 file / (67 + 15?)
+10 files / (67 + 15?)
 
 
 There are many similarities with the Waven code.
