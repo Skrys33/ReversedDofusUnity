@@ -1,7 +1,14 @@
-﻿namespace Ankama.Animator2D.Events
+﻿using System;
+using JetBrains.Annotations;
+
+namespace Ankama.Animator2D.Events
 {
-    public class Animator2DInitialisedEventArgs
+    [PublicAPI]
+    public sealed class Animator2DInitialisedEventArgs : EventArgs
     {
-        
+        [PublicAPI]
+        public Animator2DInitialisedEventArgs()
+        {
+        }
     }
 }
