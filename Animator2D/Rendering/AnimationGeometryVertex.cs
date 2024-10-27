@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Ankama.Animator2D.Rendering
 {
@@ -31,8 +33,8 @@ namespace Ankama.Animator2D.Rendering
 
                 s_layout[0] = new VertexAttributeDescriptor(VertexAttribute.Position, VertexAttributeFormat.Float32, 3, 0);
                 s_layout[1] = new VertexAttributeDescriptor(VertexAttribute.TexCoord0, VertexAttributeFormat.Float32, 2, 1);
-                s_layout[2] = new VertexAttributeDescriptor(VertexAttribute.Color, VertexAttributeFormat.Uint32, 1, 2);
-                s_layout[3] = new VertexAttributeDescriptor(VertexAttribute.Color, VertexAttributeFormat.Uint32, 1, 3);
+                s_layout[2] = new VertexAttributeDescriptor(VertexAttribute.Color, VertexAttributeFormat.UInt32, 1, 2);
+                s_layout[3] = new VertexAttributeDescriptor(VertexAttribute.Color, VertexAttributeFormat.UInt32, 1, 3);
             }
         }
     }

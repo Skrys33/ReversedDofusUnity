@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animator2D\AnimationLabel.cs" />
     <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationEndedEventArgs.cs" />
     <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationEndedEventHandler.cs" />
     <Compile Include="Animator2D\dummies\Ankama.Animations.Events\AnimationLabelChangedEventArgs.cs" />
@@ -122,15 +123,21 @@
     <Compile Include="Animator2D\dummies\gvk.cs" />
     <Compile Include="Animator2D\dummies\gvl.cs" />
     <Compile Include="Animator2D\dummies\gvm.cs" />
+    <Compile Include="Animator2D\Playables\Animator2DPlayableAsset.cs" />
+    <Compile Include="Animator2D\Rendering\AnimationGeometryVertex.cs" />
+    <Compile Include="Animator2D\Rendering\AnimationMaskType.cs" />
     <Compile Include="Animator2D\Rendering\BufferRequest.cs" />
+    <Compile Include="Animator2D\Rendering\BufferState.cs" />
+    <Compile Include="Animator2D\Rendering\PrepassTextureType.cs" />
+    <Compile Include="Animator2D\Sources.Rendering.CustomPasses\AddOutlinesPassSettings.cs" />
+    <Compile Include="Animator2D\Sources.Rendering.CustomPasses\OutlineInTexturePassSettings.cs" />
+    <Compile Include="Animator2D\Sources.Rendering.CustomPasses\OutlinePrepassSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Animator2D\Events\" />
     <Folder Include="Animator2D\Management\" />
-    <Folder Include="Animator2D\Playables\" />
-    <Folder Include="Animator2D\Sources.Rendering.CustomPasses\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.md" />
