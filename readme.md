@@ -4,10 +4,10 @@
 - Reverse Ankama.Animator2D
 
 ## Progression
-22 files / (67 + 15?)
+23 files / (67 + 15?)
 
 ## Files
-- Animations (3/16)
+- Animations (4/16)
 - Animations.Events (10/11)
 - Animations.Management (0/1)
 - Animations.Playables (1/3)
